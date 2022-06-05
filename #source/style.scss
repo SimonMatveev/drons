@@ -99,13 +99,13 @@ $black: #1D1D1F;
             flex-direction: column;
             text-align: center;
             position: fixed;
-            padding-top: 20vh;
-            top: -100%;
+            padding-top: 80px;
+            top: -200%;
             left: 0;
             background-color: rgba(0, 0, 0, 0.9);
             width: 100%;
             height: 100%;
-            transition: top 0.2s ease-in;
+            transition: top 0.3s;
             color: white;
             z-index: 5;
 
@@ -280,22 +280,20 @@ $black: #1D1D1F;
     @media (max-width:834.98px) {
         background: url("../img/bg-circle.svg") no-repeat;
         background-size: 834px;
-        background-position: left 141px bottom 0;
-        height: 720px;
-        margin-bottom: -20px;
+        background-position: left 141px bottom 42px;
+        height: 762px;
     }
 
     @media (max-width:575.98px) {
-        height: 520px;
-        background-position: left -20px bottom 0;
+        height: 562px;
+        background-position: left -20px bottom 42px;
     }
 
     @media (max-width:479.98px) {
         background: url("../img/bg-circle--small.svg") no-repeat;
         background-size: 700px;
         background-position: left -60px top -300px;
-        height: 700px;
-
+        height: 556px;
     }
 
     &__swiper {
@@ -453,7 +451,7 @@ $black: #1D1D1F;
     overflow: hidden;
 
     @media (max-width: 834.98px) {
-        padding: 124px 0 88px;
+        padding: 104px 0 88px;
     }
 
     &__container {
@@ -469,7 +467,6 @@ $black: #1D1D1F;
         width: 100%;
         height: 100%;
         position: relative;
-        padding: 66px 0;
 
         &::before {
             content: "";
@@ -477,33 +474,17 @@ $black: #1D1D1F;
             top: 0;
             left: 0;
             background-color: $black;
-            width: 64.375%;
+            width: 50%;
             height: 100%;
             display: block;
             z-index: -5;
-            border-radius: 0px 20px 20px 0px;
 
             @media (max-width: 834.98px) {
                 content: none;
             }
         }
 
-        &::after {
-            content: "";
-            position: absolute;
-            height: 180px;
-            width: 100vw;
-            bottom: -83px;
-            left: 58.61%;
-            background:
-                url("../img/drone1.svg") no-repeat 139px 73px,
-                url("../img/dot-line1.svg") repeat-x 0 0;
-            z-index: -10;
-
-            @media (max-width: 834.98px) {
-                content: none;
-            }
-        }
+        
 
         @media (max-width: 834.98px) {
             background-color: $black;
@@ -518,10 +499,30 @@ $black: #1D1D1F;
         color: #FFC20E;
         flex: 1 1 66.171%;
         display: block;
-        padding-right: 80px;
+        padding: 66px 80px 66px 0;
+        border-radius: 0px 20px 20px 0px;
+        background-color: $black;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 180px;
+            width: 2000px;
+            bottom: -83px;
+            right: -1917px;
+            background:
+                url("../img/drone1.svg") no-repeat 139px 73px,
+                url("../img/dot-line1.svg") repeat-x 0 0;
+            z-index: -10;
+
+            @media (max-width: 834.98px) {
+                content: none;
+            }
+        }
 
         @media (max-width: 834.98px) {
-            padding-right: 0;
+            padding:0;
             margin-bottom: 16px;
             font-size: 50px;
         }
@@ -547,6 +548,7 @@ $black: #1D1D1F;
         }
 
         @media (max-width: 834.98px) {
+            padding-left: 0;
             color: white;
         }
 
@@ -563,6 +565,7 @@ $black: #1D1D1F;
     overflow-x: hidden;
     padding-bottom: 405px;
     margin-bottom: -405px;
+
     &__container {}
 
     &__wrapper {
@@ -581,6 +584,9 @@ $black: #1D1D1F;
         @media (max-width: 834.98px) {
             width: 100%;
         }
+        @media (max-width: 479.98px) {
+            font-size: 16px;
+        }
     }
 
     &__title {
@@ -589,6 +595,10 @@ $black: #1D1D1F;
         line-height: 1.29;
         color: $black;
         margin-bottom: 24px;
+
+        @media (max-width: 479.98px) {
+            font-size: 28px;
+        }
     }
 
     &__list {
@@ -599,9 +609,13 @@ $black: #1D1D1F;
         padding-left: 68px;
         position: relative;
         margin-bottom: 20px;
-        min-height: 50px;
+        min-height: 48px;
         vertical-align: middle;
         display: table;
+
+        @media (max-width: 479.98px) {
+            min-height: 40px;
+        }
 
         span {
             display: table-cell;
@@ -619,14 +633,19 @@ $black: #1D1D1F;
             height: 48px;
             position: absolute;
             left: 0;
-            top: 50%;
+            top: 0;
             text-align: center;
-            transform: translateY(-50%);
             background: url(../img/ol--circle.svg) no-repeat 50% 50%;
             background-size: contain;
-        }
 
-        &::after {}
+            @media (max-width: 479.98px) {
+                font-size: 22px;
+                background: url(../img/ol--circle--small.svg) no-repeat 50% 50%;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+            }
+        }
     }
 
     &__text {
@@ -666,7 +685,7 @@ $black: #1D1D1F;
         }
 
         &::after {
-            content:"";
+            content: "";
             position: absolute;
             height: 405px;
             width: 2100px;
@@ -675,6 +694,7 @@ $black: #1D1D1F;
             right: -1966px;
             bottom: -350px;
             z-index: -10;
+
             @media (max-width: 834.98px) {
                 content: none;
             }
