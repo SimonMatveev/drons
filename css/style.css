@@ -643,7 +643,7 @@
 @media (max-width: 479.98px) {
   .how-it-works__item::before {
     font-size: 22px;
-    background: url(../img/ol--circle--small.svg) no-repeat 50% 50%;
+    background: url(../img/ol--circle-small.svg) no-repeat 50% 50%;
     width: 40px;
     height: 40px;
     line-height: 40px;
