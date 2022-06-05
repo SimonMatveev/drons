@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "swiper": "^8.2.2"
+  },
+  "name": "drons",
+  "version": "1.0.0",
+  "description": "dronchicki",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
