@@ -5,7 +5,7 @@ const swiper1 = new Swiper(".main-block__swiper", {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-      },
+    },
 });
 
 let burger = document.querySelector(".header__menu-icon");
@@ -21,3 +21,16 @@ if (burger) {
         }
     }
 }
+
+let playpause = document.querySelector(".how-it-works__play-button")
+let video = document.querySelector(".how-it-works__video")
+
+
+playpause.addEventListener('click', function (e) {
+    if (video.paused || video.ended) {
+        video.play();
+        video.setAttribute("controls","true");
+        playpause.classList.toggle("how-it-works__play-button--hidden");
+    }
+});
+
