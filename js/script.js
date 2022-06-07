@@ -1,3 +1,5 @@
+//=========================FIRST-SWIPER=======================//
+
 const swiper1 = new Swiper(".main-block__swiper", {
 
     loop: true,
@@ -7,6 +9,8 @@ const swiper1 = new Swiper(".main-block__swiper", {
         prevEl: '.swiper-button-prev',
     },
 });
+
+// =============================MENU========================== //
 
 let burger = document.querySelector(".header__menu-icon");
 let menu = document.querySelector(".header__menu-list");
@@ -22,6 +26,8 @@ if (burger) {
     }
 }
 
+// =============================VIDEO========================== //
+
 let playpause = document.querySelector(".how-it-works__play-button")
 let video = document.querySelector(".how-it-works__video")
 
@@ -29,8 +35,23 @@ let video = document.querySelector(".how-it-works__video")
 playpause.addEventListener('click', function (e) {
     if (video.paused || video.ended) {
         video.play();
-        video.setAttribute("controls","true");
+        video.setAttribute("controls", "true");
         playpause.classList.toggle("how-it-works__play-button--hidden");
     }
+});
+
+// ======================MEDIA SWIPER========================== //
+
+const swiper2 = new Swiper(".advantages__swiper", {
+
+    slidesPerView:1,spaceBetween: 30,
+
+    breakpoints: {
+        834.98: {
+            slidesPerView:3,
+            spaceBetween: 20
+        }
+    }
+
 });
 

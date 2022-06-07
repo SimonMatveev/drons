@@ -484,7 +484,7 @@ $black: #1D1D1F;
             }
         }
 
-        
+
 
         @media (max-width: 834.98px) {
             background-color: $black;
@@ -522,7 +522,7 @@ $black: #1D1D1F;
         }
 
         @media (max-width: 834.98px) {
-            padding:0;
+            padding: 0;
             margin-bottom: 16px;
             font-size: 50px;
         }
@@ -584,6 +584,7 @@ $black: #1D1D1F;
         @media (max-width: 834.98px) {
             width: 100%;
         }
+
         @media (max-width: 479.98px) {
             font-size: 16px;
         }
@@ -724,4 +725,75 @@ $black: #1D1D1F;
         }
     }
 
+}
+
+// ===================================ADVANTAGES====================================//
+
+.advantages {
+    padding: 128px 0;
+    overflow: hidden;
+    @media (max-width: 834.98px) {
+        padding: 88px 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.29;
+        color: $black;
+        margin-bottom: 24px;
+    }
+
+    &__card {
+        padding-top: 200px;
+        background: no-repeat 0 0;
+        @media (max-width: 834.98px) {
+            width: 100%;
+            border-radius: 20px;
+            padding: 224px 24px 24px;
+            background: #F6F5F3 no-repeat 24px 24px;
+        }
+
+        &:nth-child(1){
+            background-image: url("../img/cards/1.png");
+        }
+        &:nth-child(2){
+            background-image: url("../img/cards/2.png");
+        }
+        &:nth-child(3){
+            background-image: url("../img/cards/3.png");
+        }
+    }
+
+    &__card-title-double-wrapper {
+        display: table;
+        height: 78px;
+        @media (max-width: 1185.98px) {
+            height:98px;
+        }
+        @media (max-width: 834.98px) {
+            height: 78px;
+        }
+    }
+
+    &__card-title-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__card-title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1.27;
+        color: $black;
+        @media (max-width: 479.98px) {
+            font-size: 22px;
+        }
+    }
+
+    &__card-text {
+        @media (max-width: 479.98px) {
+            font-size: 16px;
+        }
+    }
 }
