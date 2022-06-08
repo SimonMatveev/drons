@@ -44,14 +44,30 @@ playpause.addEventListener('click', function (e) {
 
 const swiper2 = new Swiper(".advantages__swiper", {
 
-    slidesPerView:1,spaceBetween: 30,
+    slidesPerView: 1, spaceBetween: 30,
 
     breakpoints: {
         834.98: {
-            slidesPerView:3,
+            slidesPerView: 3,
             spaceBetween: 20
         }
     }
 
 });
 
+//========================INPUT==========================//
+
+
+let inputs = document.querySelectorAll(".contact__input-field");
+
+for (input of inputs) {
+
+    input.addEventListener("change", function () {
+        if (this.value.length) {
+            this.classList.add('contact__input--filled');
+        } else {
+            this.classList.remove('contact__input--filled');
+        }
+    });
+
+}
