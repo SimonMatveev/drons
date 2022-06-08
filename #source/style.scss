@@ -813,7 +813,7 @@ $black: #1D1D1F;
         transform: translateX(0);
     }
 
-    0% {
+    100% {
         transform: translateX(-1550px);
     }
 }
@@ -857,7 +857,7 @@ $black: #1D1D1F;
     }
 
     &__inner-wrapper {
-        width: 3080px;
+        width: 4620px;
         display: flex;
         justify-content: space-between;
         animation: running-line 10s linear infinite;

@@ -808,7 +808,7 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  0% {
+  100% {
     -webkit-transform: translateX(-1550px);
             transform: translateX(-1550px);
   }
@@ -819,7 +819,7 @@
     -webkit-transform: translateX(0);
             transform: translateX(0);
   }
-  0% {
+  100% {
     -webkit-transform: translateX(-1550px);
             transform: translateX(-1550px);
   }
@@ -863,7 +863,7 @@
   }
 }
 .partners__inner-wrapper {
-  width: 3080px;
+  width: 4620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
